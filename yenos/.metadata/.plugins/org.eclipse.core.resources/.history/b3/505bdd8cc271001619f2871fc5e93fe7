@@ -1,0 +1,8 @@
+
+public class Poly {
+	private int degree;
+	private double[] coef;
+	
+	
+
+}

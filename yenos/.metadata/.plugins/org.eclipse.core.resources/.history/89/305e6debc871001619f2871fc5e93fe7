@@ -1,0 +1,74 @@
+
+
+public class Poly {
+	private int degree;
+	private double[] coef;
+	
+	public Poly(int degree, double[] coef){
+		this.degree = degree;
+		this.coef = coef;
+	}
+
+	//두개의 다항식을 더하는 함수
+	public void addPoly(Poly a, Poly b){
+		int diff = a.degree-b.degree;
+		
+		//a가 더 차수가 높은거임.
+		if(diff>0){
+			//a =5,b =3
+			
+			double [] arrResult = new double[a.degree+1];
+			arrResult = setPreArr(a, b);
+//			for(int i=0;i<)
+//			for(int a : )
+			for(double i: arrResult){
+				System.out.println(i);	
+			}
+			
+			
+			
+		
+		//b가 차수가 더 높은거임.
+		}else{
+		
+		}
+	}
+
+	public double[] setPreArr(Poly a, Poly b){
+		int diff = abs(a.degree,b.degree);
+
+		double [] arrAdded = new double[a.degree+1];
+		for(int i=0;i<diff;i++){
+			arrAdded[i] = 0;			
+		}
+		for(int i=diff-1;i<a.degree+1;i++){
+			arrAdded[i] = a.coef[i];
+		}
+		
+		return arrAdded;
+	}
+			
+	public int getDegree() {
+		return degree;
+	}
+
+	public void setDegree(int degree) {
+		this.degree = degree;
+	}
+
+	public double[] getCoef() {
+		return coef;
+	}
+
+	public void setCoef(double[] coef) {
+		this.coef = coef;
+	}
+	public int abs(int a,int b){
+		if(a>b){
+			return a-b;
+		}else{
+			return b-a;
+		}
+	}
+
+}

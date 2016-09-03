@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+
+/**
+ * @author yenos
+ * @date 2016. 9. 3.
+ */
+public class SpareMatrix {
+	private int colum;
+	private int row;
+	private int value;
+	
+	private int[] matrix;
+	
+	
+	public SpareMatrix(matrix) {
+		// TODO Auto-generated constructor stub
+	}
+	
+}

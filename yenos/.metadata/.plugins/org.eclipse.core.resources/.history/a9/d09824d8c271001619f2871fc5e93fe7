@@ -1,0 +1,18 @@
+
+public class Poly {
+	private int degree;
+	private double[] coef;
+	
+	public Poly(int degree, double[] coef){
+		this.degree = degree;
+		this.coef = coef;
+	}
+
+	//두개의 다항식을 더하는 함수
+	public void addPoly(Poly a, Poly b){
+			
+		
+	}
+	
+
+}

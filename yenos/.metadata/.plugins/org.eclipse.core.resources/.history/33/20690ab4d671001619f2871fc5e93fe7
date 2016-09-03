@@ -37,7 +37,7 @@ public class main {
 //		
 //		SpareMatrix addMatrix = new SpareMatrix().addSM(matEx02.getMatrix(),matEx03.getMatrix());		
 //		addMatrix.prettyMatrix();		
-		//
+		
 
 		
 		

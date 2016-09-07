@@ -1,0 +1,74 @@
+/**
+ * 
+ */
+package linkedlist;
+
+import javax.xml.stream.events.NotationDeclaration;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 4.
+ */
+public class LinkedList {
+	
+	class Node{
+		String data;
+		Node next;
+	}
+
+	private Node head = null;
+	private Node lastNode = new Node();
+	
+	public LinkedList(){
+		
+	}
+	
+	public void addNode(String data){
+		Node tmp = new Node();
+		tmp.data = data;
+		if(head==null){
+			System.out.println("is First");
+			head =  new Node();
+			//해드의 노등가 이노드를 가지고있는다.
+			head.next = tmp;
+			
+			lastNode.data = tmp.data;
+			lastNode.next = tmp;			
+		}else{
+			System.out.println("is sec"+tmp.data);
+			lastNode.data = tmp.data;
+			lastNode.next = tmp;
+		}
+	}
+	public void searchNode(){
+		
+		Node tmp = new Node();
+		tmp = head;
+//		tem.ph
+		System.out.println(tmp.data);
+		System.out.println(tmp.next.data);
+		
+//		System.out.println(tmp.next.data);
+		
+		int i=0;
+		while(tmp!=lastNode){		
+			
+			//새로운노
+			Node a = new Node();
+			//이노드는 탬프의 다음이고
+			if(tmp!=null){
+				a =tmp.next;	
+				tmp = a.next;					
+				
+				i++;	
+			}
+			
+			System.out.println("ast i ==>"+i);
+
+		}
+		
+
+		
+	}
+
+}

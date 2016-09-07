@@ -42,6 +42,7 @@ public class Poly {
 		Poly newPoly = new Poly(arrResult.length-1, arrResult);
 		return newPoly;
 	}
+	
 //가장큰 어레잉에 사이즈 맞춰주는 함수.
 	public double[] setSizeToFit(Poly a, Poly b) {
 		int diff = abs(a.degree, b.degree);

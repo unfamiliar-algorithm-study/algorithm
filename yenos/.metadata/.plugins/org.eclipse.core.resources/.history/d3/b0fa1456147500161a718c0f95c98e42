@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+package sta;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 4.
+ */
+public class Stack {
+	
+	class Node{
+		String data;
+		Node next;
+	}
+	
+	Node top = null;	
+	public void push(String data){
+		Node tmp = new Node();
+		tmp.data = data;
+		if(top==null){
+			top.next= tmp;			
+		}else{
+			
+		}
+	}
+	
+	//
+//	private int stackSize = 0;
+//	String[] arr = new String[stackSize];
+	private int STACK_SIZE = 0;
+	
+	public String[] makeStackArr(int size){
+		return new String[size];		
+	}
+	
+	public void  arrPush(String data){
+	
+		
+	}
+	
+}

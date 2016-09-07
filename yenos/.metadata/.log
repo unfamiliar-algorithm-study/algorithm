@@ -190,3 +190,52 @@ Caused by: org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
 	... 85 more
+!SESSION 2016-09-07 23:12:24.897 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/yenos/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/yenos/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2016-09-07 23:12:33.984
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2016-09-07 23:12:44.418
+!MESSAGE invalid entry size (expected 12907 but got 13120 bytes)
+!STACK 0
+java.util.zip.ZipException: invalid entry size (expected 12907 but got 13120 bytes)
+	at java.util.zip.ZipInputStream.readEnd(ZipInputStream.java:384)
+	at java.util.zip.ZipInputStream.read(ZipInputStream.java:196)
+	at java.util.zip.ZipInputStream.closeEntry(ZipInputStream.java:140)
+	at java.util.zip.ZipInputStream.getNextEntry(ZipInputStream.java:118)
+	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.handleArchiveRedirection(SetupCoreUtil.java:396)
+	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.configureResourceSet(SetupCoreUtil.java:375)
+	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.createResourceSet(SetupCoreUtil.java:150)
+	at org.eclipse.oomph.setup.ui.recorder.RecorderManager.<clinit>(RecorderManager.java:119)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:194)
+	at org.eclipse.oomph.setup.ui.EarlyStartup.earlyStartup(EarlyStartup.java:22)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2829)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2016-09-07 23:12:44.787
+!MESSAGE The Eclipse Git-hosted URI 'http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Projects.ecore' is blocked for direct access.
+Please open a Bugzilla to add it to an official Oomph catalog.
+For initial testing, use the file system local version of the resource.
+Alternatively, run the setup archiver application as follows:
+  /Applications/Eclipse.app/Contents/MacOS/eclipse -application org.eclipse.oomph.setup.core.SetupArchiver -consoleLog -noSplash -uris http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Projects.ecore
+
+!ENTRY org.eclipse.jface.text 2 0 2016-09-07 23:28:23.456
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-09-07 23:28:23.457
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-09-08 00:09:48.985
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-09-08 00:09:48.986
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

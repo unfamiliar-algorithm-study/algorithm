@@ -1,0 +1,81 @@
+/**
+ * 
+ */
+package linkedlist;
+
+import javax.xml.stream.events.NotationDeclaration;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 4.
+ */
+public class LinkedList {
+	
+	class Node{
+		String data;
+		Node next;
+	}
+
+	private Node head = null;
+	private Node lastNode = new Node();
+	
+	public LinkedList(){
+		
+	}
+	
+	public void addNode(String data){
+		Node tmp = new Node();
+		tmp.data = data;
+		
+		if(head==null){
+//			System.out.println("is First "+tmp.data);
+			head =  new Node();
+			//해드의 노등가 이노드를 가지고있는다.
+			head.next = tmp;
+			
+			//라스트는 tmp자체가 되고 
+			lastNode = tmp;
+//			lastNode.next = null;
+			
+		}else{
+			//현재의 라스트는?
+//			System.out.println("current add =>"+lastNode.data);			
+			//혀재라스트의 다음을 tmp로 넣어주
+			lastNode.next = tmp;
+			
+			//라스트는 다시 tmp로 설정한다.
+			lastNode = tmp;	
+		}
+//		System.out.println("last node=>"+lastNode.data);
+	}
+	
+	public String getLastData(){
+		return lastNode.data;
+	}
+	public void searchNode(){
+		
+		Node tmp = new Node();
+		tmp = head;
+//		System.out.println(head.data);
+//		int i=0;
+		while(tmp!=lastNode){		
+//			i++;				
+			//새로운노드 추가.
+			Node a = new Node();
+			if(tmp!=null){
+				//탬프의 넥스트를 a가 가지
+				a =tmp.next;
+				//tmp는 다시 a의 next를 가진다.
+
+				tmp = a;		
+				System.out.println(a.data);
+
+				
+			}else{
+				
+				break;
+			}			
+		}		
+	}
+
+}

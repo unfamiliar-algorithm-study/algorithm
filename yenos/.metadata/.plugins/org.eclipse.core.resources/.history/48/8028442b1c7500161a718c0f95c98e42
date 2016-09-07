@@ -1,0 +1,47 @@
+/**
+ * 
+ */
+package sta;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 4.
+ */
+public class main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		Stack stack= new Stack();
+		
+		System.out.println("===== arrSTack =====");
+		//ARR!!!!!
+		stack.arrPush("hi");
+		stack.arrPush("nice");
+		stack.arrPush("meet");
+		stack.arrShowAllStack();
+//		//pop
+//		stack.arrPop();
+//		//show all
+//		stack.arrShowAllStack();
+//		//pop
+//		stack.arrPop();
+//		stack.arrShowAllStack();
+		
+		System.out.println("===== END=====");
+		System.out.println();
+		System.out.println("===== LinkStack =====");
+		
+		stack.push("hi");
+		stack.push("nice");
+		stack.push("to");
+		
+		stack.linkShowAllNode();
+		
+		
+
+	}
+
+}

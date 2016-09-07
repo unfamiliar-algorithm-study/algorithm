@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package linkedlist;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 4.
+ */
+public class main {
+
+	public static void main(String[] args) {
+		
+		LinkedList l = new LinkedList();
+		l.addLast("10");
+		
+		l.addLast("11");
+		l.addLast("12");
+		
+		l.addFirst("9");
+//		l.showAllNode();
+		
+		l.searchWithIndex(0);
+		
+		
+
+		
+		//라스트 데이터찍
+//		System.out.println(l.getLastData());
+
+	}
+
+}

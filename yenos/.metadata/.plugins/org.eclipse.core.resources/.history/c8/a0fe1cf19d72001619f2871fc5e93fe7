@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package sta;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 4.
+ */
+public class Stack {
+	
+	class Node{
+		String data;
+		Node next;
+	}
+	
+	Node top = null;	
+	public void push(String data){
+		if(top==null){
+			top = new Node();
+			top.data = data;
+			
+		}
+	}
+}

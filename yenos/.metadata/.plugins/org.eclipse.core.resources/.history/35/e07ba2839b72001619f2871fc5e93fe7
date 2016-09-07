@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package sta;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 4.
+ */
+public class main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// 
+
+	}
+
+}

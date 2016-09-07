@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Poly"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthSeparatorUI"/>
+<fullyQualifiedTypeName name="SpareMatrix"/>
+<fullyQualifiedTypeName name="linkedlist.LinkedList.Node"/>
+<fullyQualifiedTypeName name="javax.xml.stream.events.NotationDeclaration"/>
+<fullyQualifiedTypeName name="linkedlist.LinkedList"/>
+</qualifiedTypeNameHistroy>

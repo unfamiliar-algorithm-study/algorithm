@@ -9,7 +9,7 @@ public class Main {
 		numbers.addLast(20);
 		numbers.addLast(30);
 
-		System.out.println("»çÀÌÁî = " + numbers.size());
+		System.out.println("size = " + numbers.size());
 		System.out.println("index '3' = " + numbers.get(3));
 		System.out.println("index of '30' = " + numbers.indexOf(30));
 		

@@ -19,18 +19,18 @@ public class Poly {
 	}
 	
 	
-	// 두개의 다항식을 더하는 함수
+	// �몢媛쒖쓽 �떎�빆�떇�쓣 �뜑�븯�뒗 �븿�닔
 	public Poly addPoly(Poly a, Poly b){
 		
-		//어떤것이 더 차수가 높을까?
+		//�뼱�뼡寃껋씠 �뜑 李⑥닔媛� �넂�쓣源�?
 		int diff = a.degree-b.degree;
 		
-		//a가 더 차수가 높은거임.
+		//a媛� �뜑 李⑥닔媛� �넂��嫄곗엫.
 		return diff>0  ? addTerms(a, b) : addTerms(b, a);
 		
 	}
 
-	//실제 더해주는 함수.
+	//�떎�젣 �뜑�빐二쇰뒗 �븿�닔.
 	public Poly addTerms(Poly a, Poly b) {
 		double[] arrResult = new double[a.degree + 1];
 		arrResult = setSizeToFit(a, b);
@@ -42,7 +42,12 @@ public class Poly {
 		Poly newPoly = new Poly(arrResult.length-1, arrResult);
 		return newPoly;
 	}
+	
+<<<<<<< HEAD
+//媛��옣�겙 �뼱�젅�엵�뿉 �궗�씠利� 留욎떠二쇰뒗 �븿�닔.
+=======
 //가장큰 어레잉에 사이즈 맞춰주는 함수.
+>>>>>>> 398160ec1393a8e82946e7170fa4e1d77c1ecf19
 	public double[] setSizeToFit(Poly a, Poly b) {
 		int diff = abs(a.degree, b.degree);
 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Stack&apos; to &apos;sequentialstack&apos;" description="Rename resource &apos;Stack&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Stack" name="sequentialstack" stamp="1473328415151" updateReferences="true"/>
+</session>

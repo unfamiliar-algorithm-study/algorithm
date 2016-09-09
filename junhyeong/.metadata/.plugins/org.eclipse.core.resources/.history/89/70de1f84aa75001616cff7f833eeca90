@@ -1,0 +1,25 @@
+
+public class Stack {
+	private int top;
+	private int stackSize;
+	private String[] stackArray;
+	
+	public void push(String data){
+		
+	}
+	
+	public void pop(){
+		
+	}
+	
+	public void isEmpty(){
+		
+	}
+	
+	public String toString(){
+		String str = "test";
+		return str;
+	}
+	
+
+}

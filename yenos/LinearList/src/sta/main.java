@@ -10,7 +10,7 @@ package sta;
 public class main {
 
 	/**
-	 * @param args
+	 * @param args 아그스는 아그스입니다. 
 	 */
 	public static void main(String[] args) {
 
@@ -63,7 +63,7 @@ public class main {
 				stack.linkPush(strFirst);
 				// 아무것도안함
 			} else if (strFirst.equals("(") || strFirst.equals("{") || strFirst.equals("[")) {
-				// 닫는거면 팦해서 더해
+
 			} else if (strFirst.equals(")") || strFirst.equals("}") || strFirst.equals("]")) {
 				String popStr = stack.linkPop();
 				result += popStr;
@@ -74,7 +74,7 @@ public class main {
 			}
 
 		}
-		// rufrhk
+
 		System.out.println(result);
 		System.out.println("===== end =====");
 
@@ -105,7 +105,6 @@ public class main {
 					}
 				}
 			} else {
-				// 숫자푸시해서 넣어
 				stack.linkPush(strFirst);
 			}
 

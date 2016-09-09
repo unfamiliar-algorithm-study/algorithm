@@ -47,4 +47,7 @@ local.properties
 .springBeans
 
 # Code Recommenders
-.recommenders/
+.recommenders
+
+#ios
+.DS_Store

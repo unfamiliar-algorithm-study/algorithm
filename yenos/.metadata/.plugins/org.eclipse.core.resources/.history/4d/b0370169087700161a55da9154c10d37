@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package graph;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 10.
+ */
+public class graphList {
+	private Node[] list;
+	private int graphSize;
+	
+	private class Node{
+		int data;
+		Node next;
+	}
+	
+	public graphList(int graphSize){
+		list = new Node[graphSize];
+		this.graphSize = graphSize;		
+	}
+}

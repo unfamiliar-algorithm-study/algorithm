@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package graph;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 10.
+ * 그래프 알고리즘 .
+ */
+public class graphList {
+	private Node[] list;
+	private int graphSize;
+	
+	private class Node{
+		int data;
+		Node next;
+	}
+	
+	public graphList(int graphSize){
+		list = new Node[graphSize];
+		this.graphSize = graphSize;		
+	}
+	
+	// 정점 v1 에서 v2를 잇는 간선을 생성한다.
+	public void insertData(int v1, int v2){
+		
+		if(v1<0 || v2<0 || v1>=graphSize || v2>=graphSize){
+			
+		}
+		
+	}
+}

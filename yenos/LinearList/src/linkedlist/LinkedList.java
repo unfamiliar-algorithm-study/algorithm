@@ -163,7 +163,9 @@ public class LinkedList {
 			while (tmp != lastNode) {
 
 				// 새로운노드 추가.
-				Node a = new Node();
+				// 굳이 뉴를 해줄 필요가없다.
+//				Node a = new Node();
+				Node a ;
 				if (tmp != null) {
 					// 탬프의 넥스트를 a가 가지
 					a = tmp.next;
@@ -192,7 +194,8 @@ public class LinkedList {
 		while (tmp != lastNode) {
 
 			// 새로운노드 추가.
-			Node a = new Node();
+//			Node a = new Node();
+			Node a;
 			if (tmp != null) {
 				// 탬프의 넥스트를 a가 가지
 				a = tmp.next;
@@ -222,7 +225,8 @@ public class LinkedList {
 		while (tmp != lastNode) {
 
 			// 새로운노드 추가.
-			Node a = new Node();
+//			Node a = new Node();
+			Node a ;
 			if (tmp != null) {
 				// 탬프의 넥스트를 a가 가지
 				a = tmp.next;
@@ -256,7 +260,8 @@ public class LinkedList {
 
 		while (tmp != lastNode) {
 			// 새로운노드 추가.
-			Node a = new Node();
+//			Node a = new Node();
+			Node a;
 			if (tmp != null) {
 				// 탬프의 넥스트를 a가 가지
 				a = tmp.next;

@@ -77,8 +77,7 @@ public class GraphArr {
 			v = dequeue();
 			for(int i =0;i<ARR_SIZE;i++){
 				if(arr[v][i]==1 && !visit[i]){
-					visit[i] = true;
-//					System.out.println(visit[i]);
+
 					System.out.println(v+"==>"+i);
 					enqueue(i);
 				}
@@ -93,7 +92,7 @@ public class GraphArr {
 			queue[flgLastIndex] = data;
 			flgLastIndex++;	
 		}else{
-			throwing(" 범위 초과하셨습니다 ");
+//			throwing(" 범위 초과하셨습니다 ");
 		}
 	}
 	public int dequeue(){

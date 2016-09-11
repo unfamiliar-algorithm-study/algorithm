@@ -68,7 +68,7 @@ public class GraphArr {
 	
 	public void BFS(int v){
 		//해당 v정점을 방문. 
-		visit[v] = true;
+//		visit[v] = true;
 		//v 를 큐에 넣어준다.
 		enqueue(v);
 		

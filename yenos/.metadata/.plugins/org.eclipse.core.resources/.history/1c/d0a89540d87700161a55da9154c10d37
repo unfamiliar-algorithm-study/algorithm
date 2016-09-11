@@ -21,6 +21,8 @@ public class main {
 //		System.out.println("그래프 G2의 인접리스트 : ");
 //		g2.printAdjList();
 		
+		
+		
 	GraphArr graphArr = new GraphArr(5);
 	graphArr.indsertArrData(0, 1);
 	graphArr.indsertArrData(0, 2);

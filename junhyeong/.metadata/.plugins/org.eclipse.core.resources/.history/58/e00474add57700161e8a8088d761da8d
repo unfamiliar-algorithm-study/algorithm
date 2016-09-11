@@ -1,0 +1,75 @@
+package linked;
+
+public class LinkedTree {
+	private TreeNode root;
+	
+	public LinkedTree(){
+		root = null;
+	}
+	
+	class TreeNode{
+		public int keyData;
+		
+		public TreeNode leftChild;
+		public TreeNode rightChild;
+		
+		public TreeNode(int data){
+			this.keyData = data;
+			this.leftChild = null;
+			this.rightChild = null;
+		}
+		
+		public int getData(){
+			return this.keyData;
+		}
+	}
+	
+	public void insert(int keyData){
+		TreeNode insertNode = new TreeNode(keyData);
+		
+		if(root == null)
+			root = insertNode;
+		else
+		{
+			TreeNode current = root;
+			TreeNode parent;
+			
+			while(true){
+				parent = current; //부모 노드 설정
+				
+				if(keyData < current.keyData){
+				//부모노드보다 입력받은 값이 작을때 왼쪽으로 전달
+					current = current.leftChild;
+					if(current == null){
+						parent.leftChild = insertNode;
+						return;
+					}
+					else{
+						current = current.rightChild;
+						if(current == null){
+							parent.rightChild = insertNode;
+							return;
+						}
+					}
+				}
+			}
+		}
+	}
+	public void traverse(int type){
+		switch(type){
+		case 1: 
+			System.out.println("Preorder Traversal: ");
+			preOrder(root);
+			break;
+		
+		}
+	}
+	
+	private void preOrder(TreeNode tempRoot){
+		if(tempRoot != null){
+			System.out.println(tempRoot.keyData + " ");
+			preOrder(tempRoot.leftChild);
+			preOrder(tempRoot.rightChild);
+		}
+	}
+}

@@ -1,0 +1,10 @@
+package linked;
+
+public class Main {
+	public static void main(String[] args){
+		LinkedTree linkedTree = new LinkedTree();
+		
+		linkedTree.insert(50);
+	}
+
+}

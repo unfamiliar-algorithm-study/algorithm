@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package graph;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 10.
+ */
+public class main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

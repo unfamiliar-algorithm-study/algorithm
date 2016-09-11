@@ -1,0 +1,17 @@
+package linked;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		
+		LinkedTree linkedTree = new LinkedTree();
+		
+		linkedTree.insert(50);
+		int value = sc.nextInt();
+		
+		linkedTree.traverse(value);
+	}
+
+}

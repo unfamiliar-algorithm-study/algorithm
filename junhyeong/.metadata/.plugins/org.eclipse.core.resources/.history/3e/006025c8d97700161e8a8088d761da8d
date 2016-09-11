@@ -1,0 +1,52 @@
+package binarysearchtree;
+
+public class BinarySearchTree {
+	private TreeNode root = new TreeNode();
+	
+	public TreeNode insertKey(TreeNode root, char data){
+		TreeNode parent = root;
+		TreeNode newNode = new TreeNode(data);
+		
+		if(parent == null){
+			return newNode;
+		}else if(parent.data > newNode.data){
+			parent.left = insertKey(parent.left, data);
+			return parent;
+		}else if(parent.data < newNode.data){
+			parent.right = insertKey(parent.right, data);
+			return parent;
+		}else{
+			return parent;
+		}
+	}
+	
+	public void insertBST(char data){
+		root = insertKey(root, data);
+	}
+	
+	public TreeNode searchBST(char data){
+		TreeNode parent = root;
+		while(parent!= null){
+			if(data < parent.data) 
+				parent = parent.left;
+			else if(data > parent.data)
+				parent = parent.right;
+			else
+				return parent;
+		}
+		return parent;
+	}
+	
+	public void inorder(TreeNode root){
+		if(root != null){
+			inorder(root.left);
+			System.out.print(root.data + " ");
+			inorder(root.right);
+		}
+	}
+	
+	public void printBST(){
+		inorder(root);
+		System.out.println();
+	}
+}

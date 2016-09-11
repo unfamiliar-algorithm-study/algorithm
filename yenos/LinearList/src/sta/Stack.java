@@ -22,10 +22,12 @@ public class Stack {
 		// top이 널이면
 		// top을 만들어주고
 		if (top == null) {
+			//  top (data x) -> newNode 
 			top = new Node();
 			top.data = null;
 			top.next = tmp;
 		} else {
+			
 			// top 이 널이 아니라면 최소 1개가 존재한다.
 			// case1. top -> 0node
 			// case2. top -> 1 node -> 0 node
@@ -84,7 +86,19 @@ public class Stack {
 		return top.next == null ? true : false;
 	}
 
+
+
+
+
+
+
+
+
+
+
+
 	// @@@ arrray!!!!!
+	// *** 배열 푸시 할때 항상 새로 만들지 말고 꽉찼을경우에만 채우기.
 	private int STACK_SIZE = 0;
 	String[] arrStack;
 

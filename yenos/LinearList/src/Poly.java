@@ -42,12 +42,8 @@ public class Poly {
 		Poly newPoly = new Poly(arrResult.length-1, arrResult);
 		return newPoly;
 	}
-	
-<<<<<<< HEAD
-//媛��옣�겙 �뼱�젅�엵�뿉 �궗�씠利� 留욎떠二쇰뒗 �븿�닔.
-=======
+
 //가장큰 어레잉에 사이즈 맞춰주는 함수.
->>>>>>> 398160ec1393a8e82946e7170fa4e1d77c1ecf19
 	public double[] setSizeToFit(Poly a, Poly b) {
 		int diff = abs(a.degree, b.degree);
 

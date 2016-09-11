@@ -17,7 +17,7 @@ public class LinkedQueue {
 	}
 
 	public boolean isEmpty(){ //프론트랑 꼬리가널이면 빈것으로 간주
-		if(front == null && rear == null){
+		if(front == null){
 			return true;
 		}else{
 			return false;
@@ -51,14 +51,14 @@ public class LinkedQueue {
 			return "-";
 		}
 		StringBuilder sb = new StringBuilder();
-		
 		Node pointer = front; //첫 노드를 가르키게하는 포인터변수 
 		while(true){ //계속돈다 
 			sb.append(pointer.data+" ");
 			pointer = pointer.link; //포인터를 이동한다 
-
-			if(pointer == rear){ //포인터가 가르키는게 노드가 가르키면 부레이크 
-				break;
+			
+			if(pointer == rear){ //포인터가 가르키는게 노드가 가르키면 부레이크
+				sb.append(pointer.data+" ");
+				break; 
 			}
 		}
 		return sb.toString();

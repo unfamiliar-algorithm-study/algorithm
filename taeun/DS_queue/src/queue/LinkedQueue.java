@@ -30,6 +30,7 @@ public class LinkedQueue {
 		if(isEmpty()){ //비었을때는 front와 rear가 가르키기만 하면된다.
 			front = newNode;
 			rear = newNode;
+			return;
 		}
 		rear.link = newNode; //안비었으면 꼬리노드에 newNode연결 
 		rear = newNode; //꼬리포인터는 newNode를 가르키게됨 

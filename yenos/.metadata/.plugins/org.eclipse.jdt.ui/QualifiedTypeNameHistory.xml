@@ -6,7 +6,6 @@
 <fullyQualifiedTypeName name="linkedlist.LinkedList.Node"/>
 <fullyQualifiedTypeName name="javax.xml.stream.events.NotationDeclaration"/>
 <fullyQualifiedTypeName name="linkedlist.LinkedList"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.w3c.dom.ranges.RangeException"/>
 <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
 <fullyQualifiedTypeName name="sta.Stack"/>
@@ -15,4 +14,8 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="graph.GraphArr"/>
 <fullyQualifiedTypeName name="graph.graphList"/>
+<fullyQualifiedTypeName name="queue.Deck"/>
+<fullyQualifiedTypeName name="tree.binarySearch"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="tree.binarySearch.Node"/>
 </qualifiedTypeNameHistroy>

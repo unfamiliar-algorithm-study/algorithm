@@ -37,7 +37,7 @@ public class LinkedList {
 	private int lastIndex;
 
 	public LinkedList() {
-
+		
 	}
 	// public boolean isEmpty(){
 	// return lastNode.data == null ? true : false ;

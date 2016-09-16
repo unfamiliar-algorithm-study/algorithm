@@ -1,0 +1,85 @@
+/**
+ * 
+ */
+package queue;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 14.
+ */
+public class Deck {
+	
+	class Node{
+		Node left;
+		Node right;
+		String data;
+	}	
+	
+	Node front;
+	Node rear;
+	
+	public void createDQ(){
+		front = null;
+		rear = null;		
+	}
+	
+	
+	//만약 큐가 비었다면 둘다 널일 경우이다. 
+	public Boolean isEmptyDQ(){
+		if (front == null && rear==null){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	public void insertFront(String data){
+		
+		Node newNode = new Node();
+		newNode.data = data;
+		
+		//비어있다면 
+		if(isEmptyDQ()){
+			front = new Node();
+			rear = new Node();
+			//프론트의 라잇은 새로운 노드를 가치키고 /
+			front.right = newNode;
+			//레어는 맨뒤에 있는 녀석 즉 지금 이자신.
+			rear = newNode;				
+		}
+		//이미 차있다면.
+		else{
+			//프론트의 오른쪽이 가르치고있는 노드의 왼쪽이 새로운 노드를 가르치
+			Node tmp =front.right;			
+			tmp.left = newNode;
+			//새로운 노드의 오른쪽은 전에 노드가되
+			newNode.right =tmp;
+			
+			//프론트는 다시 새노드들 가르킨다
+			front.right = newNode;
+//			//레어는 새로운노드가된다.
+//			rear = newNode;
+		}
+	
+	}
+	
+	public void printPretty(){
+		if(isEmptyDQ()){
+			System.out.println("ur Deck Empty");
+		}else{
+			Node tmp2 = front.right;
+			System.out.println(tmp2.data);
+			System.out.println(rear.data);
+			while(front.right!=null){
+				Node tmp = front.right;
+				System.out.println(tmp.data + "->");
+				
+				front.right =tmp.right;
+				
+			}
+		}
+	}
+	
+	
+
+}

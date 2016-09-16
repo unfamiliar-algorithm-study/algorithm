@@ -23,4 +23,6 @@
 			<item value="org.eclipse.jpt.jaxb"/>
 		</list>
 	</section>
+	<section name="ImportExportAction">
+	</section>
 </section>

@@ -54,7 +54,7 @@ public class Main {
 		System.out.println(circularQueue);
 		
 		while(!circularQueue.isEmpty()){
-			System.out.println(circularQueue.deQueue()+"*"); //사이즈만큼 디큐
+			System.out.println(circularQueue.deQueue()); //사이즈만큼 디큐
 		}
 		System.out.println(circularQueue);
 		

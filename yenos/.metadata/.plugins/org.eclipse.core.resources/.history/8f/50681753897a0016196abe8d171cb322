@@ -1,0 +1,30 @@
+
+/**
+ * 
+ */
+
+/**
+ * @author yenos
+ * @date 2016. 9. 14.
+ */
+@SuppressWarnings("serial")
+public class PkCustomExceptions extends Exception {
+	public PkCustomExceptions(String message) {
+		super(message);
+	}
+	
+//	class PkCustomException extends Exception {
+//		public PkCustomException(String message) {
+//			super(message);
+//		}
+//	}
+
+	public void throwing(String msg) {
+		try {
+			throw new PkCustomExceptions(msg);
+		} catch (PkCustomExceptions e) {
+			e.printStackTrace();
+		}
+	}
+}
+

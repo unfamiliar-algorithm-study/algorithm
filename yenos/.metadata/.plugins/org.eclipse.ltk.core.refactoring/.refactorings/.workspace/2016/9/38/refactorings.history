@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;LinearList/src/queue/deck.java&apos;" deleteContents="false" description="Delete resource &apos;LinearList/src/queue/deck.java&apos;" element1="/LinearList/src/queue/deck.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1473861461388"/>&#x0A;<refactoring comment="Delete resource &apos;LinearList/src/PkCustomExceptions.java&apos;" deleteContents="false" description="Delete resource &apos;LinearList/src/PkCustomExceptions.java&apos;" element1="/LinearList/src/PkCustomExceptions.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1473864195982"/>
+</session>

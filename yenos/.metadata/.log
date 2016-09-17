@@ -378,6 +378,7 @@ Alternatively, run the setup archiver application as follows:
 
 !ENTRY org.eclipse.jface.text 2 0 2016-09-10 12:39:46.786
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+<<<<<<< HEAD
 !SESSION 2016-09-16 12:01:20.041 -----------------------------------------------
 eclipse.buildId=4.5.1.M20150904-0015
 java.version=1.8.0_101
@@ -2869,3 +2870,27 @@ java.lang.Exception
 !MESSAGE From: artificial_root 1.0.0.v1474006942317
 !SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-09-16 15:22:27.587
 !MESSAGE To: epp.package.java [4.6.0,4.7.0)
+=======
+!SESSION 2016-09-14 22:04:17.545 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/yenos/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/yenos/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2016-09-14 22:04:35.073
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface.text 2 0 2016-09-14 22:14:38.242
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-09-14 22:14:38.249
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-09-14 22:57:00.734
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-09-14 22:57:00.735
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+>>>>>>> 481425128e090d8fedf4d5167f4b7e084f3975a9

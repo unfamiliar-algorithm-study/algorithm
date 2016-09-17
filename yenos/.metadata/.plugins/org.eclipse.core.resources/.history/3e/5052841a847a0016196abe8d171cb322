@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package queue;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 14.
+ */
+public class Deck {
+	
+	class Node{
+		Node left;
+		Node right;
+		String data;
+	}	
+	
+	Node front;
+	Node rear;
+	
+	public void createDQ(){
+		front = null;
+		rear = null;		
+	}
+	
+	//만야 
+	public void isEmptyDQ(){
+		if (front == null && rear==null){
+			
+		}
+	}
+
+}

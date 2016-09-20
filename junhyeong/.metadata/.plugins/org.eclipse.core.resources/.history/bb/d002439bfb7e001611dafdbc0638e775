@@ -1,0 +1,49 @@
+package highsort;
+
+public class QuickSort {
+	
+	public QuickSort(){
+		System.out.print("test1");
+	}
+	
+	public void quicksort(int[]arr, int begin, int end){
+		int left;
+		int right;
+		int pivot;
+		int temp;
+		if(begin < end){
+			left = begin +1;
+			right = end;
+			pivot = arr[begin];
+			while(left < right){
+				System.out.print("test");
+				while(arr[left] < pivot){
+					left++;
+				}
+				while(arr[right] > pivot){
+					right--;
+				}
+				if(left < right){
+					temp = arr[right];
+					arr[right] = arr[left];
+					arr[left] = temp;
+				}
+			}
+			arr[begin] = arr[right];
+			arr[right] = pivot;
+			
+			tracer(arr, arr.length);
+			quicksort(arr, begin, right-1);
+			quicksort(arr, right+1, end);
+
+		}
+	}
+	
+	public void tracer(int[] arr, int len){
+		int i;
+		for(i = 0; i<len; i++){
+			System.out.print(arr[i]);
+		}
+		System.out.println("");
+	}
+}

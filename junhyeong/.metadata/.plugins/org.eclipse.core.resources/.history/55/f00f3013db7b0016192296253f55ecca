@@ -1,0 +1,36 @@
+package graph;
+
+public class ListGraph {
+	private Node[] list;
+	private int n; // vertex 개수
+	public ListGraph(int n) {
+		list = new Node[n];
+		this.n = n;
+	}
+	
+	public void insertEdge(int v1, int v2) {
+		if(v1<0 || v1>=n || v2<0 || v2>=n)
+			System.out.println("그래프에 없는 정점입니다!");
+		else {
+			// vertex가 v2인 새로운 노드를 v1의 연결리스트 맨 앞에 삽입
+			Node newNode = new Node();
+			newNode.vertex = v2;
+			newNode.link = list[v1];
+			list[v1] = newNode;
+		}
+	}
+	public void printAdjList() {
+		for(int i=0; i<n; i++) {
+			System.out.print("정점 " + i + "의 인접리스트");
+	
+			for(Node temp = list[i]; temp != null; temp = temp.link)
+				System.out.print(" -> "+ temp.vertex);
+			System.out.println();
+			}
+	}
+		
+	private class Node {
+		int vertex;
+		Node link;
+	}
+}

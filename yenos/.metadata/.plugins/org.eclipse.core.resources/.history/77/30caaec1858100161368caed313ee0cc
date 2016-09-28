@@ -1,0 +1,53 @@
+/**
+ * 
+ */
+package algoTree;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 23.
+ */
+public class QuardTree {
+	
+	public static void 넷으로나눠서불러오는능력(int 이중배열[][]){
+		int 이중배열길이 = 이중배열[0].length;
+		
+		
+		System.out.println("----------- 좌상 -----------"+이중배열길이 );	
+		for(int i = 0;i<이중배열길이/2;i++){
+			for(int j = 0;j<이중배열길이/2;j++){
+				System.out.print(이중배열[i][j]);
+			}
+			System.out.println();
+		}
+		
+		System.out.println("----------- 좌하 -----------"+이중배열길이 );		
+		for(int i= 이중배열길이/2;i<이중배열길이;i++){
+			for(int j= 0;j<이중배열길이/2;j++){
+				System.out.print(이중배열[i][j]);
+			}
+			System.out.println();
+		}
+		
+		System.out.println("----------- 우상 -----------"+이중배열길이 );
+		for(int i= 0;i<이중배열길이/2;i++){
+			for(int j= 이중배열길이/2;j<이중배열길이;j++){
+				System.out.print(이중배열[i][j]);
+			}
+			System.out.println();
+		}
+		
+		
+		System.out.println("---------- 우하 -----------"+이중배열길이 );
+		for(int i= 이중배열길이/2;i<이중배열길이;i++){
+			for(int j= 이중배열길이/2;j<이중배열길이;j++){
+				System.out.print(이중배열[i][j]);
+			}
+			System.out.println();
+		}
+		
+	}
+	
+	
+	
+}

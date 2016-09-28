@@ -1,0 +1,66 @@
+/**
+ * 
+ */
+package sort;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 19.
+ */
+public class main {
+
+	/**
+	 * @date
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int arr[]  = {10,5,13,24,7,30,1};
+		System.out.println("====before====");
+		for(int i=0;i<arr.length;i++){
+			System.out.print(arr[i]+" ");
+			
+		}		
+		
+		System.out.println("");
+		System.out.println("===selection Sort ====");
+		System.out.println("====after====");
+		int resultSelect[] = new Sort().selectionSort(arr);		
+		for(int i=0;i<resultSelect.length;i++){
+			System.out.print(resultSelect[i]+" ");
+		}
+		
+		System.out.println("");
+		System.out.println("===bubble Sort ====");
+		System.out.println("====after====");
+		int resultBubble[] = new Sort().bubbleSort(arr);		
+		for(int i=0;i<resultBubble.length;i++){
+			System.out.print(resultBubble[i]+" ");
+		}
+		
+		System.out.println("");
+		System.out.println("===insertion Sort ====");
+		System.out.println("====after====");
+		int resultInsertion[] = new Sort().insertSort(arr);		
+		for(int i=0;i<resultInsertion.length;i++){
+			System.out.print(resultInsertion[i]+" ");
+		}
+		
+		System.out.println("");
+		System.out.println("===quick Sort ====");
+		System.out.println("====after====");
+		int resultQuick[] = new Sort().quickSort(arr,arr[0],arr[arr.length-1]);		
+		for(int i=0;i<resultQuick.length;i++){
+			System.out.print(resultQuick[i]+" ");
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

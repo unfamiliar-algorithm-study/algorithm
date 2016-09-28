@@ -1,0 +1,83 @@
+/**
+ * 
+ */
+package sort;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 19.
+ * 정렬을 구현해봅시다!
+ */
+public class Sort {
+	
+
+	public int[] selectionSrot(int arr[]){
+		int arrLen = arr.length;
+		int unSize = 0;
+		int smallestIndex = 0;
+		
+		
+		int standardValue = arr[0];
+		for(int i = unSize;i<arrLen; i++){
+			// 검색한결과가 기준벨류보다 작으면 
+			// 작은벨류를 계속바꿔준다.
+			if(standardValue>arr[i]){
+				standardValue = arr[i];
+			}
+			System.out.println(i);
+
+			if(i==arrLen-1){
+				System.out.println(i);
+				int tmp;
+//				//탬프에 값을 넣어주고 
+				tmp = arr[unSize];
+//				//기준엔 가장 작은 값을 넣고.
+				arr[unSize] = arr[smallestIndex];				
+//				//기존꺼 바꾸기.
+				arr[smallestIndex] = tmp;
+//				//언사이즈를 ++ 해주고
+				
+				unSize++;
+			}
+			
+		}
+			
+			//unsize가 인덱스가 된다.(바꿀인덱스)
+			
+//			int standardValue=arr[unSize];
+//			int smallestIndex=0;
+			//인덱스만찾으면 된다.
+//			for(int j = unSize ;j<arrLen;j++){		
+//
+//			}
+			
+//				//검색한 값이 스몰리스트보다 작다
+//				if(standardValue>arr[j]){
+//					//smallest는 arr[j]로 바꿔준다.
+////					standardValue = arr[j];		
+//					smallestIndex = j;
+//					System.out.println("smallest Inde=>"+smallestIndex);
+//				}
+//				System.out.println(" =>"+unSize);
+//
+//				//마지막까지 도착했다면 
+//				if(j==arrLen-1){
+//					System.out.println("j =>"+j);
+//					System.out.println("smallest =>"+arr[smallestIndex]);
+//					int tmp;
+//					//탬프에 값을 넣어주고 
+//					tmp = arr[unSize];
+//					//기준엔 가장 작은 값을 넣고.
+//					arr[unSize] = arr[smallestIndex];				
+//					//기존꺼 바꾸기.
+//					arr[smallestIndex] = tmp;
+//					//언사이즈를 ++ 해주고
+//					unSize++;
+//				}
+//			}			
+//		}
+		return arr;
+	}
+	
+	
+}

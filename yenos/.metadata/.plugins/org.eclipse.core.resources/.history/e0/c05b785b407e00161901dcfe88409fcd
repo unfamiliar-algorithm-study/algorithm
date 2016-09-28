@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package sort;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 19.
+ */
+public class main {
+
+	/**
+	 * @date
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int arr[]  = {10,5,13,24,7,30,1};
+		System.out.println("====정렬 전 ====");
+		for(int i=0;i<arr.length;i++){
+			System.out.println(arr[i]);
+			
+		}		
+		System.out.println("====정렬 후 ====");
+		int result[] = new Sort().selectionSrot(arr);		
+		for(int i=0;i<result.length;i++){
+			System.out.println(result[i]);
+		}
+	}
+
+}

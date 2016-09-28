@@ -1,0 +1,47 @@
+/**
+ * 
+ */
+package sort;
+
+/**
+ * @author yenos
+ * @date 2016. 9. 19.
+ */
+public class main {
+
+	/**
+	 * @date
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int arr[]  = {10,5,13,24,7,30,1};
+		System.out.println("====before====");
+		for(int i=0;i<arr.length;i++){
+			System.out.print(arr[i]+" ");
+			
+		}		
+		
+		System.out.println("");
+		System.out.println("===selection Sort ====");
+		System.out.println("====after====");
+		int result[] = new Sort().selectionSort(arr);		
+		for(int i=0;i<result.length;i++){
+			System.out.print(result[i]+" ");
+		}
+		
+		System.out.println("");
+		System.out.println("===bubble Sort ====");
+		System.out.println("====after====");
+		int result2[] = new Sort().selectionSort(arr);		
+		for(int i=0;i<result2.length;i++){
+			System.out.print(result2[i]+" ");
+		}
+		
+		
+		
+		
+	}
+
+}

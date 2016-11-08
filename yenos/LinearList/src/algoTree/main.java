@@ -73,7 +73,7 @@ public class main {
 			// 배열의 길이를 반으로 나눈다. 그리고 나눈만큼 for 루프를 돌린다.
 			넷으로나눠서불러오는능력(table);
 			System.out.println(result());
-
+//ss
 //		}
 
 	}

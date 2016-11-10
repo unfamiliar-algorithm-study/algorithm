@@ -52,7 +52,7 @@ public class CorporationSalary {
 				}
 			}
 			
-			//최말단 사원이 한번도 호출된적 없을 때
+			//오직 가장 첫번째 사원이 모두 N인 최말당 사원일때만 생각한 조건문
 			if(salary[index] == 0){
 				salary[index] = 1;
 			}		

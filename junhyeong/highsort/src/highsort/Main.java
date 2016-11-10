@@ -2,7 +2,7 @@ package highsort;
 
 public class Main {
 	public static void main(String[] args){
-		int[] arr1 = {73, 45, 63, 26, 37, 31, 18, 5};
+		int[] arr1 = {5, 3, 8, 4, 9, 1, 6, 2};
 		int[] arr2 = {73, 45, 26, 16, 63, 8, 31, 22};
 
 		QuickSort quicksort = new QuickSort();

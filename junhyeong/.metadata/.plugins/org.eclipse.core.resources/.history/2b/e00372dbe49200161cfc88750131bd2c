@@ -1,0 +1,26 @@
+package radix;
+
+public class Radix {
+	public int[] radixSort(int[] A){
+		for(int shift = Integer.SIZE -1; shift > -1; shift--){
+			int[] tmp = new int[A.length];
+			int j = 0;
+			for(int i = 0; i<A.length; i++){
+				boolean move = (A[i] << shift) >= 0;
+				if(shift == 0 ? !move : move){
+					tmp[j] = A[i];
+					j++;
+				}
+				else {
+					A[i-j] = A[i];
+				}
+			}
+			for(int i = j; i < tmp.length; i++){
+				tmp[i] = A[i-j];
+			}
+			A = tmp;
+		}
+		
+		return A;
+	}
+}

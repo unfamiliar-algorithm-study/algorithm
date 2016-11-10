@@ -1,0 +1,38 @@
+package back_fibonacci;
+
+import java.util.Scanner;
+
+public class Main {
+
+	static int num_0 = 0;
+	static int num_1 = 0;
+	
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int count = sc.nextInt();
+		int n = 0;
+		
+		
+		for(int i = 0; i < count; i++){
+			n = sc.nextInt();
+			fibonacci(n);
+			System.out.println(num_0 + " " + num_1);
+			num_0 = num_1 = 0;
+		}
+	}
+	
+	public static int fibonacci(int n){
+		if(n == 0)
+		{
+			num_0 += 1;
+			return 0;
+		}
+		else if(n == 1)
+		{
+			num_1 += 1;
+			return 1;
+		}
+		else
+			return fibonacci(n-2) + fibonacci(n-1);
+	}
+}

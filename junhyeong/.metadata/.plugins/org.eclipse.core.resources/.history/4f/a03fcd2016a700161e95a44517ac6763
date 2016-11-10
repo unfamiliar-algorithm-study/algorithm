@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class CorporationSalary {
+	
+	public static void main(String[] args){
+		
+		Scanner sc = new Scanner(System.in);
+		int size;
+		String inputRelations;
+		String[] relations;
+		
+		inputRelations = sc.nextLine();
+		size = (int) Math.sqrt(inputRelations.length());
+		System.out.println(size);
+		
+		relations = new String[size];
+		StringTokenizer st = new StringTokenizer(inputRelations, " ");
+		
+		for(int i = 0; i < size; i++){
+			relations[i] = st.nextToken();
+			System.out.println(relations[i]);
+		}
+		
+	}
+	
+	public long totalSalary(String[] relations){
+		return 10;
+	}
+}

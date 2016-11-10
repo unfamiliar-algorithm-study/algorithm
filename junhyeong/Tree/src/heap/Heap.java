@@ -58,10 +58,17 @@ class Heap {
 	{
 		//원소의 갯수가 n개인 이진트리 생성
 		//원소의 값은 random하게 삽입한다.
-		
 		for(int i = 1; i < cnt; i++) 
 		{ 
-				 tree[i]=(int)(Math.random()*100); 
+			tree[i]=(int)(Math.random()*100); 
+		}
+		
+		System.out.println("insertBinaryTree");
+		for(int l = 1; l<=cnt ; l*=2){
+			for(int k=l ; k<=l*2-1;k++){
+				System.out.print(tree[k]+"\t");
+			}
+			System.out.println();
 		}
 	}
 
@@ -83,6 +90,7 @@ class Heap {
 				p=j;
 			}
 		}
+		System.out.println("makeTreeHeap");
 		for(int l = 1; l<=n ; l*=2){
 			for(int k=l ; k<=l*2-1;k++){
 				System.out.print(tree[k]+"\t");

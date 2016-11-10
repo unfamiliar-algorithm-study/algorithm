@@ -1,0 +1,16 @@
+package radix;
+
+import java.util.Arrays;
+
+public class Main {
+	public static void main(String[] args){
+		Radix radix = new Radix();
+		int[] A = {30, 50, 7, 40, 88, 15, 44, 55, 22, 33, 77, 99, 11, 66, 1, 85};
+		System.out.println("A[] = " + Arrays.toString(A));
+
+		A = radix.radixSort(A);
+		
+		System.out.println("정렬된 A[] = " + Arrays.toString(A));
+
+	}
+}

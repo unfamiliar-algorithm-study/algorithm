@@ -21,11 +21,11 @@ public class Main {
 
 		H.insertBinaryTree(H.tree, 10);
 		H.makeTreeHeap(H.tree, 10);
-		H.delete(H.tree);H.delete(H.tree);
+		//H.delete(H.tree);
+		//H.delete(H.tree);
 		H.print_Heap(H.tree);
-		H.delete(H.heap);H.delete(H.heap);
+		//H.delete(H.heap);
+		//H.delete(H.heap);
 		H.print_Heap(H.heap);	
-
-
 	}
 }

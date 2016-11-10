@@ -9,6 +9,5 @@ public class Main {
 		SelectionSort selectionsort = new SelectionSort(arr1);
 		BubbleSort bubblesort = new BubbleSort(arr2);
 		InsertionSort insertion = new InsertionSort(arr3);
-
 	}
 }

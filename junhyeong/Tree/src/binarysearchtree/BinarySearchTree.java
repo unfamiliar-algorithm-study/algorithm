@@ -15,7 +15,7 @@ public class BinarySearchTree {
 		TreeNode newNode = new TreeNode(data);
 		
 		if(parent == null){
-
+			
 			return newNode;
 		}else if(parent.data > newNode.data){
 			parent.left = insertKey(parent.left, data);

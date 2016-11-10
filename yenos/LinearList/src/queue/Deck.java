@@ -1,10 +1,5 @@
-/**
- * 
- */
-package queue;
-//package queue;
 
-//import linkedlist.LinkedList.PkCustomException;
+package queue;
 import except.PkCustomExcept;
 
 /**

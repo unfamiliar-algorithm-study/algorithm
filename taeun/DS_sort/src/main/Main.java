@@ -17,6 +17,8 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		Math.random();
+
 		int[] arr = { 5, 3, 2, 8, 1, 6, 4 };
 
 		Sort.mergeSort(arr);

@@ -3,7 +3,6 @@
 <fullyQualifiedTypeName name="normalsort.SelectionSort"/>
 <fullyQualifiedTypeName name="javax.print.DocFlavor.INPUT_STREAM"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="javax.xml.transform.Templates"/>
@@ -11,4 +10,6 @@
 <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
 <fullyQualifiedTypeName name="java.awt.geom.RectangularShape"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction"/>
 </qualifiedTypeNameHistroy>
